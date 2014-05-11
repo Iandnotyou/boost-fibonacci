@@ -12,7 +12,7 @@ T fibonacci(T n) {
 	T current, pre = T(1), prepre = T(0);
 
 	if (n == 0 || n == 1) return T(n);
-    for (T i = T(1);i < n; i++) {
+    for (T i = T(1);i <= n; i++) {
 	     current = pre + prepre;
 	     prepre  = pre;
 	     pre     = current;
